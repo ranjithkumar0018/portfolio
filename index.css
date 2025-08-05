@@ -1,230 +1,114 @@
-/* General Styles */
+/* Reset and basic styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
 body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
 }
 
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Header Section */
+/* Header Navigation */
 header {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-#toggle-theme {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#toggle-theme:hover {
-    background-color: #0056b3;
-}
-
-/* Navigation */
-nav {
-    background-color: #333;
-    color: white;
     padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    color: #007bff;
+    background-color: #575757;
+    border-radius: 5px;
 }
 
-/* About Section */
+/* Sections */
+section {
+    padding: 50px 0;
+}
+
 #about {
     background-color: #fff;
-    padding: 40px 0;
     text-align: center;
 }
 
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1rem;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#skills h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#skills li {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-/* Projects Section */
 #projects {
-    padding: 40px 0;
-    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#projects .project {
+    margin-bottom: 30px;
 }
 
 #projects h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    width: 250px;
-}
-
-.project-card h3 {
-    font-size: 1.5rem;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
-.project-card a {
-    text-decoration: none;
-    color: #007BFF;
+#projects p {
+    margin-bottom: 10px;
+}
+
+#projects a {
+    color: #007bff;
     font-weight: bold;
 }
 
-/* Contact Section */
 #contact {
     background-color: #fff;
-    padding: 40px 0;
     text-align: center;
 }
 
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+#contact a {
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-form {
-    display: grid;
-    gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
+#contact a:hover {
+    text-decoration: underline;
 }
 
-form input,
-form textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #444;
-}
-
-#form-message {
-    color: green;
-    font-size: 1.1rem;
-    margin-top: 20px;
-}
-
-/* Footer Section */
+/* Footer */
 footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 footer p {
-    font-size: 1rem;
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #333;
-    color: #f4f4f9;
-}
-
-body.dark-mode header {
-    background-color: #444;
-}
-
-body.dark-mode nav {
-    background-color: #444;
-}
-
-body.dark-mode footer {
-    background-color: #444;
-}
-
-body.dark-mode .project-card {
-    background-color: #555;
-}
-
-body.dark-mode .project-card a {
-    color: #4d9bff;
+    font-size: 16px;
 }
