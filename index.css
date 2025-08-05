@@ -1,114 +1,69 @@
-/* Reset and basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Reset and Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header Navigation */
 header {
-    background-color: #333;
-    padding: 10px 0;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 nav ul li {
-    margin: 0 15px;
+  margin: 0 1rem;
 }
 
 nav ul li a {
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-    text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
+  color: #ffe4e1;
 }
 
-/* Sections */
-section {
-    padding: 50px 0;
+.section {
+  padding: 3rem 2rem;
+  background: #f0f0f0;
+  margin-bottom: 1rem;
 }
 
-#about {
-    background-color: #fff;
-    text-align: center;
+.section:nth-child(even) {
+  background: #fff0f5;
 }
 
-#projects {
-    background-color: #f9f9f9;
+h2 {
+  color: #ff416c;
 }
 
-#projects .project {
-    margin-bottom: 30px;
+.project-card {
+  background: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 5px solid #ff4b2b;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-#projects h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-#projects p {
-    margin-bottom: 10px;
-}
-
-#projects a {
-    color: #007bff;
-    font-weight: bold;
-}
-
-#contact {
-    background-color: #fff;
-    text-align: center;
-}
-
-#contact a {
-    color: #007bff;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    font-size: 16px;
-}
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
